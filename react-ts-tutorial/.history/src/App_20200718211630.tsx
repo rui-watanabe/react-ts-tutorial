@@ -23,8 +23,8 @@ function App() {
       <p>{ message }</p>
       <ul>
         { items.map((item: Item) => (
-          <li key={ item.id }>{ item.title }</li>
-        )) }
+          
+        ))}
       </ul>
     </div>
   );

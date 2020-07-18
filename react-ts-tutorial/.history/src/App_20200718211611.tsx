@@ -22,9 +22,7 @@ function App() {
     <div className="App">
       <p>{ message }</p>
       <ul>
-        { items.map((item: Item) => (
-          <li key={ item.id }>{ item.title }</li>
-        )) }
+        { items.map((item: Item))}
       </ul>
     </div>
   );

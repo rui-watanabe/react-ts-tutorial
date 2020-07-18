@@ -8,7 +8,7 @@ type Item = {
 
 function App() {
   const message: string = 'hello';
-  const items: Item[] = [
+  const item: Item[] = [
     {
       id: 1,
       title: 'highest price'
@@ -22,9 +22,7 @@ function App() {
     <div className="App">
       <p>{ message }</p>
       <ul>
-        { items.map((item: Item) => (
-          <li key={ item.id }>{ item.title }</li>
-        )) }
+        {}
       </ul>
     </div>
   );
