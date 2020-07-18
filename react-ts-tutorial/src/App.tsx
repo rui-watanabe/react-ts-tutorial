@@ -6,7 +6,17 @@ type Item = {
   title: string
 }
 
-function App() {
+type Props = {
+  message: string;
+}
+
+const Child: React.FC<Props> = ({ message }) => {
+  return (
+    <p>{ message }</p>
+  )
+}
+
+const App: React.FC = () => {
   const message: string = 'hello';
   const items: Item[] = [
     {
@@ -26,6 +36,7 @@ function App() {
           <li key={ item.id }>{ item.title }</li>
         )) }
       </ul>
+      <Child message = "prop value"/>
     </div>
   );
 }
