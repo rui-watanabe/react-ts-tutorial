@@ -8,11 +8,15 @@ type Item = {
 
 type Props = {
   message: string;
+  children: React.ReactNode;
 }
 
-const Child: React.FC<Props> = ({ message }) => {
+const Child: React.FC<Props> = ({ message, children }) => {
   return (
-    <p>{ message }</p>
+    <div>
+      <p>{ message }</p>
+      { children }
+    </div>
   )
 }
 
@@ -36,7 +40,7 @@ const App: React.FC = () => {
           <li key={ item.id }>{ item.title }</li>
         )) }
       </ul>
-      <Child message = "prop value"/>
+      <Child message = "prop value">prop child component</Child>
     </div>
   );
 }
