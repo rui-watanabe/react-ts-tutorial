@@ -5,7 +5,7 @@ function App() {
   const message: string = 'hello';
   return (
     <div className="App">
-      <p>{ message }</p>
+      <p>{ string }</p>
     </div>
   );
 }

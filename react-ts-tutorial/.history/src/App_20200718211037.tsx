@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  const message: string = 'hello';
+  const message: string = 
   return (
     <div className="App">
-      <p>{ message }</p>
+      <p>Hello</p>
     </div>
   );
 }
